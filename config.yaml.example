@@ -1,0 +1,24 @@
+# Add your API providers here
+# Each provider needs:
+# - keys: list of API keys or just separated by comma (will be rotated in round-robin fashion)
+# - base_url: the base URL for the provider's API
+
+gemini:
+  keys: "your-gemini-api-key-1,your-gemini-api-key-2,your-gemini-api-key-3"
+  base_url: "https://generativelanguage.googleapis.com/" # or your cloudflare ai gateway
+
+openrouter:
+  keys: "your-openrouter-api-key-1,your-openrouter-api-key-2"
+  base_url: "https://openrouter.ai/api/v1/"
+
+modelscope:
+  keys:
+    - "your-modelscope-api-key-1"
+    - "your-modelscope-api-key-2"
+    - "your-modelscope-api-key-3"
+  base_url: "https://api-inference.modelscope.cn/v1/"
+
+# Add another provider like OpenAI (not tested)
+# openai:
+#   keys: "your-openai-api-key-1,your-openai-api-key-2"
+#   base_url: "https://api.openai.com/v1"
