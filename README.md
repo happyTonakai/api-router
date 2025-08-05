@@ -14,7 +14,7 @@ A simple API router that supports multiple API keys with round-robin rotation fo
 
 1. Install dependencies:
 ```bash
-uv add flask requests pyyaml gunicorn
+uv sync
 ```
 
 2. Configure your API keys in `config.yaml`:
@@ -48,7 +48,7 @@ openrouter:
 
 3. Run the server:
 ```bash
-uv run server.py
+uv run app.py
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ uv run server.py
 Once running, the server will be available at `http://localhost:9999`
 
 ### Gemini API
-- Endpoint: `http://localhost:9999/gemini/v1/models/gemini-pro:generateContent`
+- Endpoint: `http://localhost:9999/gemini/v1/models/gemini-2.5-flash:generateContent`
 - All Gemini API endpoints are supported
 
 ### OpenRouter API
