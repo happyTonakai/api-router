@@ -1,0 +1,9 @@
+services:
+  api-router:
+    image: api-router:latest # Use the image you already built
+    container_name: api-router
+    ports:
+      - "9999:9999"
+    environment:
+      - FLASK_ENV=development
+    restart: unless-stopped
